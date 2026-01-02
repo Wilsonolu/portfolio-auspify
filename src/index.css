@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce-fade-large {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60px);
+    opacity: 0.2;
+  }
+}
+
+.animate-bounce-fade-large {
+  animation: bounce-fade-large 2.5s ease-in-out infinite;
+}
+@keyframes typing {
+  0%, 10% {
+    width: 0;
+  }
+  45%, 55% {
+    width: 100%;
+  }
+  90%, 100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  animation: typing 15s steps(30) infinite, blink 0.5s step-end infinite;
+  display: inline-block;
+}
