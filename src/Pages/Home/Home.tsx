@@ -69,7 +69,7 @@ const Home = () => {
   };
 
   return (
-    <div className="pl-0 pr-7 relative m-0 dark:bg-black">
+    <div className="pl-7 pr-7 relative m-0 dark:bg-black">
         <nav className="flex justify-between pt-4 pb-4 fixed w-full shadow-md pr-6 top-0 right-0 z-50 pl-4 mb-0 dark:text-white">
             <div className="font-[600] text-[17px] cursor-pointer dark:text-white ">Wilson Emmanuel</div>
               <div className="hidden lg:flex items-center gap-8 dark:text-white">
@@ -88,6 +88,7 @@ const Home = () => {
 
             </div>
         </nav>
+        
                {!bar && (
                 <div className="fixed gap-[30px] pt-0 bg-white w-full text-center nav-list top-[64px] left-0 right-0 z-40 mt-0 dark:bg-black">
                             <p className="cursor-pointer mb-3 dark:text-white" onClick={() => setBar(true)}>
@@ -114,20 +115,23 @@ const Home = () => {
             )}
         
 
-       
+        
         <div className='text-center'>
          <h1 className='pt-[130px] text-[30px] font-[700] mb-2 lg:text-[40px]'>
   <span className='typing-effect dark:text-white'>Hi, I'm Wilson Emmanuel</span>
 </h1>
             <p className='text-[17px] max-w-[680px] m-auto title-sub'>Front-end Engineer specializing in building exceptional digital experiences with React, Next.js, and Tailwind CSS.</p>
             <div className='flex items-center justify-center gap-10 mt-10 mb-10'>
-                <p className='text-white bg-black py-2 px-3 rounded-[8px] cursor-pointer  dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white'>View My Work <i className="ml-2 fa-solid fa-arrow-right-from-bracket"></i></p>
-                <p className='border-[1px] border-black py-2 px-3 rounded-[10px] cursor-pointer dark:bg-black dark:text-white dark:hover:bg-white dark:hover:text-black'>Get in touch <i className="fa-solid fa-envelope ml-2"></i></p>
+                <a href='#projects'><p className='text-white bg-black py-2 px-3 rounded-[8px] cursor-pointer  dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white'>View My Work <i className="ml-2 fa-solid fa-arrow-right-from-bracket"></i></p> </a>
+               <a href='#contact'><p className='border-[1px] border-black py-2 px-3 rounded-[10px] cursor-pointer dark:bg-black dark:text-white dark:hover:bg-white dark:hover:text-black'>Get in touch <i className="fa-solid fa-envelope ml-2"></i></p> </a>
             </div>
             <div>
                 <i className="fa-solid fa-arrow-down mt-14 animate-bounce-fade-large dark:text-white"></i>
             </div>
-
+            
+    
+            
+                
               <div id='about' className='text-center mt-16'>
                 <h1 className='text-[26px] font-[700] dark:text-white'>About Me</h1>
                 <p className='text-[14px] about-sub mt-6'>I'm a passionate Front-end Engineer with expertise in creating responsive, user-friendly web applications. With a strong foundation in modern JavaScript frameworks and libraries, I specialize in building performant and accessible web experiences.</p>
@@ -142,7 +146,7 @@ const Home = () => {
         
         <div id='skills' className='mt-10 bg-pink stack py-10 px-4 dark:bg-neutral-950'>
             <h1 className='text-center text-[25px] font-[700] dark:text-white'>My Tech Stack</h1>
- <div className="grid grid-cols-2 gap-14 grido mt-8 lg:grid-cols-4">
+ <div className="grid grid-cols-2 gap-5 grido mt-8 px-6 lg:grid-cols-4">
     <div className="flex flex-col items-center bg-white py-6 rounded-[8px] shadow-md griddy dark:bg-neutral-800">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" className="w-14 h-14"  />
         <p className="mt-2 dark:text-white">React JS</p>
@@ -178,7 +182,7 @@ const Home = () => {
         <p className="mt-2 dark:text-white">CSS</p>
     </div>
     
-    <div className="flex flex-col items-center bg-white py-6 rounded-[8px] shadow-md griddy dark:bg-neutral-800">
+    <div className="flex flex-col items-center bg-white py-6 px-4 rounded-[8px] shadow-md griddy dark:bg-neutral-800">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" className="w-14 h-14" />
         <p className="mt-2 dark:text-white">GIT</p>
     </div>
@@ -186,7 +190,7 @@ const Home = () => {
         </div>
 
         
-        <div id='project' className='text-center mt-16'>
+        <div id='projects' className='text-center mt-16'>
             <p className='text-[30px] font-[700] mb-14 dark:text-white'>My Projects</p>
             <div className='flex items-start justify-center gap-10 flex-col lg:flex-row px-6 py-4'>
                 <div className='py-6 shadow-md rounded-[8px] bg-white pro dark:bg-neutral-900'>
